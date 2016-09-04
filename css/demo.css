@@ -1,0 +1,65 @@
+#demo{
+	width:100%;
+	margin:0 auto;
+}
+#demo .container{
+	height:500px;
+	width:1280px;
+	overflow:hidden;
+	text-align:center;
+	text-decoration:none;
+	position:relative;
+	margin:0 auto;
+
+	}
+#demo .container .lists{
+	width:1280px;
+    position: relative;
+	} 
+#demo .container .lists img{
+	width:1280px;
+	margin:0 auto;
+	z-index:1;
+    opacity:0;
+    filter:alpha(opacity=0);
+    position: absolute;
+	left:0;
+	top:0;
+	}
+#demo .container .arrow{
+	z-index:2;
+	font-size:36px;
+	line-height:40px;
+	height:40px;
+	width:40px;
+	font-weight:bold;
+	position:absolute;
+	top:230px;
+	color:#FFF;
+	background-color:RGBA(0,0,0,0.3);
+	display:none;
+	}
+#demo .container:hover .arrow{
+	display:block;
+	background-color:RGBA(0,0,0,0.7);}
+#prev{left:20px;}
+#next{right:20px;}
+#demo .container #buttons{
+	z-index:2;
+	position:absolute;
+	bottom:20px;
+	margin:0 auto;
+	left:50%;
+}
+#demo .container #buttons a{
+	border:3px solid #CCC;
+	margin:0 20px;
+	height:10px;
+	width:10px;
+	border-radius:50%;
+	background:#FFF;
+	float:left;
+	box-shadow:0 0 10px #000000;
+}
+#demo .container #buttons .on{
+	background:#F60;}
